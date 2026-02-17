@@ -1,9 +1,0 @@
-{
-  "name": "solidhunter",
-  "rules": [
-    {
-      "id": "named-parameters-mapping",
-      "severity": "WARNING"
-    }
-  ]
-}

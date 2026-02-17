@@ -1,9 +1,0 @@
-{
-  "name": "solidhunter",
-  "rules": [
-    {
-      "id": "one-contract-per-file",
-      "severity": "WARNING"
-    }
-  ]
-}

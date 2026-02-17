@@ -1,7 +1,5 @@
 packages:
-  - "libs/*"
   - "servers/*"
   - "vscode"
-  - "sidebar"
   - "env-panel"
   - "docs-panel"

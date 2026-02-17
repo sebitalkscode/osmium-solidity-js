@@ -1,9 +1,0 @@
-{
-  "name": "solidhunter",
-  "rules": [
-    {
-      "id": "no-console",
-      "severity": "WARNING"
-    }
-  ]
-}

@@ -1,21 +1,46 @@
+node_modules/
+**/node_modules/
+
+.turbo/
+**/target/
+
+# Build output
+vscode/dist/
+docs-panel/dist/
+docs-panel/dist_tsc/
+env-panel/dist/
+servers/sidebar/dist/
+servers/solidity-server/dist/
+vscode/dist_js/
+vscode/dist_tsc/
+
+# IDE files
+.vs/
+**/.vs/
+.idea/
+*.swp
+*.swo
+
+# Package manager
 .yarn/*
 !.yarn/patches
 !.yarn/plugins
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
-
-# Swap the comments on the following lines if you wish to use zero-installs
-# In that case, don't forget to run `yarn config set enableGlobalCache false`!
-# Documentation here: https://yarnpkg.com/features/caching#zero-installs
-
-#!.yarn/cache
 .pnp.*
 
-.turbo
+# Extension runtime data
+.osmium/
 
-**/node_modules
+# OS files
+.DS_Store
+Thumbs.db
 
-**/target
+# Test workspace build artifacts
+test-workspace/cache/
+test-workspace/out/
+test-workspace/broadcast/
 
-.idea
+# Source maps
+*.js.map

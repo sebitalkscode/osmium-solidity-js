@@ -1,9 +1,0 @@
-{
-  "name": "solidhunter",
-  "rules": [
-    {
-      "id": "not-rely-on-time",
-      "severity": "WARNING"
-    }
-  ]
-}
