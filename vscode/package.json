@@ -248,7 +248,7 @@
     "@typescript-eslint/parser": "^7.16.0",
     "@vscode/test-cli": "^0.0.4",
     "@vscode/test-electron": "^2.3.8",
-    "@vscode/vsce": "^2.24.0",
+    "@vscode/vsce": "^3.7.1",
     "eslint": "^8.57.0",
     "prettier": "^3.8.1",
     "toml": "^3.0.0",
