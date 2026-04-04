@@ -20,7 +20,7 @@
     "viem": "^2.21.41"
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "^4.3.3",
+    "@vitejs/plugin-react": "^6.0.1",
     "autoprefixer": "^10.4.19",
     "eslint": "^8.57.0",
     "eslint-plugin-react-hooks": "^4.6.2",
