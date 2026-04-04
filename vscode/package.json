@@ -259,7 +259,7 @@
     "eslint": "^8.57.0",
     "prettier": "^3.8.1",
     "toml": "^3.0.0",
-    "ts-loader": "^9.5.1",
+    "ts-loader": "^9.5.7",
     "typescript": "^5.8.2",
     "uuid": "^9.0.1",
     "viem": "^2.21.12",
