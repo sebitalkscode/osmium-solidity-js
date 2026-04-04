@@ -1,0 +1,46 @@
+node_modules/
+**/node_modules/
+
+.turbo/
+**/target/
+
+# Build output
+vscode/dist/
+docs-panel/dist/
+docs-panel/dist_tsc/
+env-panel/dist/
+servers/sidebar/dist/
+servers/solidity-server/dist/
+vscode/dist_js/
+vscode/dist_tsc/
+
+# IDE files
+.vs/
+**/.vs/
+.idea/
+*.swp
+*.swo
+
+# Package manager
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
+
+# Extension runtime data
+.osmium/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test workspace build artifacts
+test-workspace/cache/
+test-workspace/out/
+test-workspace/broadcast/
+
+# Source maps
+*.js.map

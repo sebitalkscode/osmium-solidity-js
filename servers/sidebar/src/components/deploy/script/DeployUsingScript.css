@@ -1,0 +1,29 @@
+.dropdown-container {
+    flex-direction: column;
+} 
+
+.submit-button {
+    min-width: 100%;
+}
+
+.label {
+    margin-bottom: 0.2rem;
+}
+
+.dropdown-scripts, .dropdown-wallets {
+    width: 80%;
+    margin-right: 0.5rem;
+}
+
+.contract-container, .wallet-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.error-message {
+    color: var(--vscode-errorForeground);
+}
+
+.title-script {
+    font-weight: bold;
+}

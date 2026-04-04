@@ -1,0 +1,114 @@
+{
+  "Contract Skeleton": {
+    "prefix": "contract",
+    "body": [
+      "// SPDX-License-Identifier: ${1:MIT}",
+      "pragma solidity ^${2:0.8.20};",
+      "",
+      "contract ${3:ContractName} {",
+      "    constructor() {",
+      "        $0",
+      "    }",
+      "}"
+    ],
+    "description": "Standard Solidity contract skeleton"
+  },
+  "Interface Skeleton": {
+    "prefix": "interface",
+    "body": [
+      "interface I${1:InterfaceName} {",
+      "    $0",
+      "}"
+    ],
+    "description": "Standard Solidity interface skeleton"
+  },
+  "Library Skeleton": {
+    "prefix": "library",
+    "body": [
+      "library ${1:LibraryName} {",
+      "    $0",
+      "}"
+    ],
+    "description": "Standard Solidity library skeleton"
+  },
+  "Function Template": {
+    "prefix": "function",
+    "body": [
+      "function ${1:functionName}(${2:params}) ${3|public,private,internal,external|} ${4|pure,view,mutable|} returns (${5:uint256}) {",
+      "    $0",
+      "}"
+    ],
+    "description": "Standard function definition"
+  },
+  "Constructor Template": {
+    "prefix": "constructor",
+    "body": [
+      "constructor(${1:params}) {",
+      "    $0",
+      "}"
+    ],
+    "description": "Contract constructor declaration"
+  },
+  "Event Template": {
+    "prefix": "event",
+    "body": [
+      "event ${1:EventName}(${2:address indexed user, uint256 amount});"
+    ],
+    "description": "Event declaration"
+  },
+  "Modifier Template": {
+    "prefix": "modifier",
+    "body": [
+      "modifier ${1:modifierName}(${2:params}) {",
+      "    ${3:require(msg.sender == owner, \"Not owner\");}",
+      "    _;",
+      "}"
+    ],
+    "description": "Function modifier template"
+  },
+  "Error Template": {
+    "prefix": "error",
+    "body": [
+      "error ${1:ErrorName}(${2:address caller, uint256 amount});"
+    ],
+    "description": "Custom error declaration (Solidity 0.8.4+)"
+  },
+  "Struct Template": {
+    "prefix": "struct",
+    "body": [
+      "struct ${1:StructName} {",
+      "    ${2:address user;}",
+      "    ${3:uint256 amount;}",
+      "}"
+    ],
+    "description": "Struct definition"
+  },
+  "Mapping Template": {
+    "prefix": "mapping",
+    "body": [
+      "mapping(${1:address} => ${2:uint256}) ${3:public} ${4:balances};"
+    ],
+    "description": "State mapping declaration"
+  },
+  "Revert with reason": {
+    "prefix": "revert",
+    "body": [
+      "revert ${1:ErrorName}($0);"
+    ],
+    "description": "Trigger a custom error"
+  },
+  "Require statement": {
+    "prefix": "require",
+    "body": [
+      "require(${1:condition}, \"${2:Error message}\");"
+    ],
+    "description": "Require check with reason"
+  },
+  "Emit event": {
+    "prefix": "emit",
+    "body": [
+      "emit ${1:EventName}($0);"
+    ],
+    "description": "Emit a declared event"
+  }
+}

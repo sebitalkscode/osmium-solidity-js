@@ -1,0 +1,28 @@
+{
+  "name": "osmium-solidity",
+  "private": true,
+  "workspaces": [
+    "servers/*",
+    "vscode",
+    "env-panel",
+    "docs-panel"
+  ],
+  "devDependencies": {
+    "turbo": "^2.3.0"
+  },
+  "scripts": {
+    "build": "turbo build && node ./scripts/copy-servers.js && node ./scripts/copy-front.js",
+    "build:extension": "turbo build:extension && node ./scripts/copy-servers.js && node ./scripts/copy-front.js",
+    "build:frontends": "pnpm exec turbo run build --filter=docs-panel --filter=env-panel --filter=sidebar && node ./scripts/copy-front.js",
+    "publish": "turbo publish",
+    "publish:check": "turbo publish:check",
+    "publish:extension": "turbo publish:extension",
+    "test": "turbo test",
+    "format": "turbo format",
+    "format:check": "turbo format:check",
+    "lint": "turbo lint",
+    "lint:check": "turbo lint:check",
+    "build:recode": "turbo run build --filter=osmium-solidity-extension --filter=docs-panel --filter=env-panel --filter=sidebar && node ./scripts/copy-servers.js && node ./scripts/copy-front.js"
+  },
+  "packageManager": "pnpm@9.15.0"
+}

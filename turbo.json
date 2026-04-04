@@ -1,0 +1,32 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "tasks": {
+    "build": {
+      "inputs": ["src/**"],
+      "outputs": ["target/**", "dist/**"],
+      "cache": false
+    },
+    "build:extension": {
+      "inputs": ["src/**"],
+      "outputs": ["target/**", "dist/**"],
+      "cache": false
+    },
+    "lint": {},
+    "lint:check": {},
+    "format": {},
+    "format:check": {},
+    "test": {
+      "dependsOn": ["^build"],
+      "cache": false
+    },
+    "publish:check": {
+      "dependsOn": ["^build", "^publish:check"]
+    },
+    "publish": {
+      "dependsOn": ["^build", "^publish"]
+    },
+    "publish:extension": {
+      "dependsOn": ["^build", "^publish:extension"]
+    }
+  }
+}
