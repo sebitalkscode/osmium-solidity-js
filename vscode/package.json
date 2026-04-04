@@ -2,7 +2,7 @@
   "name": "osmium-solidity-extension",
   "displayName": "Osmium Solidity",
   "description": "Solidity language support with Foundry, Slither security, gas estimation, and deploy/interact panels. Linter, formatter, compiler, and go-to-definition.",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "publisher": "OsmiumToolchains",
   "repository": {
     "type": "git",
