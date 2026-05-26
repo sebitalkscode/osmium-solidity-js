@@ -13,7 +13,7 @@
     "vscode-languageserver": "^9.0.1",
     "vscode-languageserver-textdocument": "^1.0.11",
     "solhint": "^6.0.3",
-    "prettier": "^3.8.1",
+    "prettier": "^3.8.3",
     "prettier-plugin-solidity": "^2.2.1"
   },
   "engines": {
