@@ -271,6 +271,6 @@
     "env-panel": "workspace:*",
     "ethers": "^6.13.0",
     "sidebar": "workspace:*",
-    "vscode-languageclient": "^9.0.1"
+    "vscode-languageclient": "^10.0.0"
   }
 }
